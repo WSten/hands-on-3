@@ -16,7 +16,7 @@ else:
 
 def calcenergy(a):
     """Function to print the potential, kinetic and total energy."""
-    epot = a.get_potential_energy() / len(a)
+    epot = a.get_potential_energy() / len(a) * 100
     ekin = a.get_kinetic_energy() / len(a)
     temp = ekin / (1.5 * units.kB)
     etot = epot + ekin
